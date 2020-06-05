@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" style="
+width: fit-content;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <title>Day Wise Distance</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-box">
+            <div class="page-heading">Day Wise Distance</div>
+            <div class="filter"><img src="https://img.icons8.com/ios-filled/50/ffffff/filter.png" /></div>
+        </div>
+    </header>
+    <section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="head-box">
+                    <div class="page-heading">Alerts</div>
+                    <div class="filter-cross"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" /></div>
+                </div>
+                <div class="container">
+                    <form action="#">
+                        <select name="day" id="day">
+                        <option value="today" selected>Today</option>
+                        <option value="yesterday" selected>Yesterday</option>
+                    </select>
+                        <form action="#">
+                            <label for="search">Object Selection:</label>
+                            <input type="search" name="search" id="search" placeholder="Search">
+                            <button type="submit" class="search-btn"><img src="https://img.icons8.com/material/14/000000/search--v1.png"/></button>
+                        </form>
+                        <div class="check">
+                            <ul>
+                                <li>
+                                    <div class="main-check">
+                                        <input type="checkbox" id="your-company"><label for="your-company">Your Company</label>
+                                    </div>
+                                    <ul>
+                                        <li><label><input type="checkbox" class="subOption"> CanIQ Hyundai I20</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 1</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 2</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 3</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 4</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 5</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 6</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 7</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 8</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 9</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 10</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 11</label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="close">Genetrate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <table id="example" class="table table-striped table-bordered nowrap" style="width:100%" style="width:100%;text-align: center;">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+                                        <ul class="dropdown-menu scrollable-menu" role="menu">
+                                            <li><a href="#">Company</a></li>
+                                            <li><a href="#">Object</a></li>
+                                            <li><a href="#">Branch</a></li>
+                                            <li><a href="#">Driver</a></li>
+                                            <li><a href="#">IMEI</a></li>
+                                            <li><a href="#">Start Location</a></li>
+                                            <li><a href="#">Distance</a></li>
+                                            <li><a href="#">Idel</a></li>
+                                            <li><a href="#">Inactive</a></li>
+                                            <li><a href="#">Max stoagge</a></li>
+                                            <li><a href="#">No of Idel</a></li>
+                                            <li><a href="#">AVG</a></li>
+                                            <li><a href="#">MAX</a></li>
+                                            <li><a href="#">Over Speed</a></li> 
+                                            <li><a href="#">Alerts</a></li> 
+                                            <li><a href="#">End Location</a></li> 
+                                            <li><a href="#">Play back</a></li> 
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                          </th>
+                    <th>Company</th>
+                    <th>Object </th>
+                    <th>Branch</th>
+                    <th>Driver</th>
+                    <th>IMEI N.O</th>
+                    <th>Start Location</th>
+                    <th>Distance</th>
+                    <th>Idel</th>
+                    <th>Inactive</th>
+                    <th>Max stoagge</th>
+                    <th>No of Idle</th>
+                    <th>AVG</th>
+                    <th>Max</th>
+                    <th>Over Speed</th>
+                    <th>Alerts</th>
+                    <th>End Location</th>
+                    <th>Play back</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>RYD region</td>
+                    <td>RYD Branch</td>
+                    <td>RYD Branch Vehicle</td>
+                    <td>Not defined</td>
+                    <td>12345567</td>
+                    <td>unknown</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>0.0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>RYD region</td>
+                    <td>RYD Branch</td>
+                    <td>RYD Branch Vehicle</td>
+                    <td>Not defined</td>
+                    <td>12345567</td>
+                    <td>unknown</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>00.00</td>
+                    <td>0.0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/tables.js"></script>
+</body>
+
+</html>

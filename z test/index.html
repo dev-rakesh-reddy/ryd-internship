@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-box">
+            <div class="page-heading">Heading</div>
+            <div class="help"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/question-mark.png" />
+                <div class="dropdown">
+                    <ul class="dropdown-content" id="drop">
+                        <li class="description">Description</li>
+                        <li class="manual">Manual</li>
+                        <li class="how-to">How To?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="settings"><img src="https://img.icons8.com/metro/26/ffffff/settings.png" /></div>
+            <div class="filter"><img src="https://img.icons8.com/ios-filled/50/ffffff/filter.png" /></div>
+        </div>
+        <div class="help-description-modal">
+            <div class="help-description-modal-content">
+                <div class="help-description-heading-box">
+                    <ul>
+                        <li class="help-description-heading">Description</li>
+                        <li class="help-description-modal-cross">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" alt="cross icon" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrolable-content">
+                    <div class="description-modal-heading">
+                        Description
+                    </div>
+                    <table class="help-description-table">
+                        <tr>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="help-manual-modal">
+            <div class="help-manual-modal-content">
+                <div class="help-manual-heading-box">
+                    <ul>
+                        <li class="help-manual-heading">Manual</li>
+                        <li class="help-manual-modal-cross">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" alt="cross icon" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrolable-content">
+                    <iframe class="help-manual-iframe" src="manual.pdf"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="help-how-to-modal">
+            <div class="help-how-to-modal-content">
+                <div class="help-how-to-heading-box">
+                    <ul>
+                        <li class="help-how-to-heading">How to?</li>
+                        <li class="help-how-to-modal-cross">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" alt="cross icon" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrolable-content">
+                    <table class="help-how-to-table">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="settings-modal">
+            <div class="settings-modal-content">
+                <div class="head-box">
+                    <div class="page-heading">Settings</div>
+                </div>
+                <div class="settings-table">
+                    <table>
+                        <tr>
+                            <th>Column</th>
+                            <th>Showable</th>
+                            <th>Sortable</th>
+                            <th>Sort Priority</th>
+                            <th>Sorting</th>
+                        </tr>
+                        <tr>
+                            <td>Company</td>
+                            <td><input type="checkbox" name="showable" id="showable"></td>
+                            <td><input type="checkbox" name="sortable" id="sortable"></td>
+                            <td><input type="number" value="1" name="priority" id="priority"></td>
+                            <td><select name="sorting" id="sorting">
+                            <option value="asc">Ascending</option>
+                            <option value="des">Descending</option>
+                        </select></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="foot">
+                    <img class="save" src="https://img.icons8.com/wired/64/000000/save.png" />
+                    <img src="https://img.icons8.com/dotty/80/000000/refresh.png" />
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="head-box">
+                    <div class="page-heading">Alerts</div>
+                    <div class="filter-cross"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" /></div>
+                </div>
+                <div class="container">
+                    <form action="#">
+                        <select name="day" id="day">
+                        <option value="today" selected>Today</option>
+                        <option value="yesterday" selected>Yesterday</option>
+                    </select>
+                        <form action="#">
+                            <label for="search">Object Selection:</label>
+                            <input type="search" name="search" id="search" placeholder="Search">
+                            <button type="submit" class="search-btn"><img src="https://img.icons8.com/material/14/000000/search--v1.png"/></button>
+                        </form>
+                        <div class="check">
+                            <ul>
+                                <li>
+                                    <div class="main-check">
+                                        <input type="checkbox" id="your-company"><label for="your-company">Your Company</label>
+                                    </div>
+                                    <ul>
+                                        <li><label><input type="checkbox" class="subOption"> CanIQ Hyundai I20</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 1</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 2</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 3</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 4</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 5</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 6</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 7</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 8</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 9</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 10</label></li>
+                                        <li><label><input type="checkbox" class="subOption">Vehicle No 11</label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="close">Genetrate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="table-responsive">
+                  <table summary="Table functionality" class="table table-bordered table-hover table-sm" width="100%">
+                    <thead>
+                      <tr>
+                      <th>Company</th>
+                      <th>Object </th>
+                      <th>Branch</th>
+                      <th>Driver</th>
+                      <th>IMEI N.O</th>
+                      <th>Start Location</th>
+                      <th>Distance</th>
+                      <th>Idel</th>
+                      <th>Inactive</th>
+                      <th>Max stoagge</th>
+                      <th>No of Idle</th>
+                      <th>AVG</th>
+                      <th>Max</th>
+                      <th>Over Speed</th>
+                      <th>Alerts</th>
+                      <th>End Location</th>
+                      <th>Play back</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>&#43;</span>
+                        </td>
+                      <td>RYD region</td>
+                      <td>RYD Branch</td>
+                      <td>RYD Branch Vehicle</td>
+                      <td>Not defined</td>
+                      <td>12345567</td>
+                      <td>unknown</td>
+                      <td>00.00</td>
+                      <td>00.00</td>
+                      <td>00.00</td>
+                      <td>00.00</td>
+                      <td>0.0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                      <tr>
+                        <td><span>&#43;</span>
+                        </td>
+                        <td>RYD region</td>
+                        <td>RYD Branch</td>
+                        <td>RYD Branch Vehicle</td>
+                        <td>Not defined</td>
+                        <td>12345567</td>
+                        <td>unknown</td>
+                        <td>00.00</td>
+                        <td>00.00</td>
+                        <td>00.00</td>
+                        <td>00.00</td>
+                        <td>0.0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                        <td>--</td>
+                        <td>--</td>                </tr>
+
+                    </tbody>
+                   <!--end of .table-responsive <tfoot>
+                      <tr>
+                      </tr>
+                    </tfoot>-->
+                  </table>
+                </div><!--end of .table-responsive-->
+              </div>
+            </div>
+          </div>
+          <!-- Optional JavaScript -->
+
+    </section>
+<div>
+
+
+    <footer id="footer">
+    <tr>
+
+<td>
+  <a href="#" class="previous square">&#8592;</a>
+  <a href="#" class="refresh square">&#10227;</a>
+  <a href="#" class="down square">&nbsp&nbsp&nbsp&#8595;<br><b>PDF</b></a>
+<a href="#" class="down square" style="padding-right:300px;">&nbsp&nbsp&nbsp&#8595;<br><b>XLS</b></a>
+</td>
+<td>
+  <input type="text" name="" value="" style="padding-left:100px; height:17px;">
+  <select id="cars" style="padding-left: 90px;height:22px;">
+  <align = "center">
+  <option value="All">All</option>
+  <option value="Company">Company</option>
+  <option value="Branch">Branch</option>
+  <option value="Driver">Driver</option>
+  <option value="IMEI No">IMEI No</option>
+  <option value="Start">Start Location</option>
+  <option value="End">End Location</option>
+</select>
+</align>
+</td>
+<td>
+<button style="font-size:24px"> <i class="fa fa-search"></i></button>
+</td>
+<td>
+<div id="records-per-page" align="right">
+<select>
+              <option value = "10">10</option>
+              <option value = "20">20</option>
+              <option value = "30">30</option>
+              <option value = "40">40</option>
+              <option value = "50">50</option>
+              <option value = "100">100</option>
+              <option value = "200">200</option>
+              <option value = "300">300</option>
+              <option value = "400">400</option>
+              <option value = "500">500</option>
+              <option value = "1000">500</option>
+            </select>
+        </div>
+  </footer>
+
+</td>
+</tr>
+</div>
+</div>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

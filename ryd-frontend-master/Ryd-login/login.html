@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<title>RYD</title>
+</head>
+<body>
+<div class="container">
+  <div class="card-wrap">
+    <div class="card border-0 shadow card--welcome is-show" id="welcome">
+      <div class="card-body">
+        <h2 class="card-title">WELCOME TO RYD</h2>
+        <p>LOGIN PAGE</p>
+        <div class="btn-wrap"><a class="btn btn-lg btn-register js-btn" data-target="register">REGISTER</a><a class="btn btn-lg btn-login js-btn" data-target="login">LOGIN</a></div>
+      </div>
+    </div>
+    <div class="card border-0 shadow card--register" id="register">
+      <div class="card-body">
+        <h2 class="card-title">Create Account</h2>
+        <p class="card-text">Enter your personal details<br/>and start journey with us</p>
+        <p class="badge-wrap"><a class="badge"><i class="fab fa-facebook-f"></i></a><a class="badge"><i class="fab fa-google"></i></a><a class="badge"><i class="fab fa-twitter"></i></a><a class="badge"><i class="fab fa-github"></i></a></p>
+        <p>or use your email for registration</p>
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Name" required="required"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email" required="required"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" placeholder="Password" required="required"/>
+          </div>
+          <button class="btn btn-lg">REGISTER</button>
+        </form>
+      </div>
+      <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+    </div>
+    <div class="card border-0 shadow card--login" id="login">
+      <div class="card-body">
+        <h2 class="card-title">Welcome To RYD </h2>
+        <p> connect with us<br/>Social login</p>
+        <p class="badge-wrap"><a class="badge"><i class="fab fa-facebook-f"></i></a><a class="badge"><i class="fab fa-google"></i></a><a class="badge"><i class="fab fa-twitter"></i></a><a class="badge"><i class="fab fa-github"></i></a></p>
+        <p>or use your account</p>
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email" required="required"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" placeholder="Password" required="required"/>
+          </div>
+          <div class="checkbox">
+            <label>
+                <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+            </label>
+        </div>
+          <p><a>Forgot password?</a></p>
+          <button class="btn btn-lg" onclick="myFunction()">LOGIN</button>
+          <script>
+            function myFunction() {
+              location.replace("www.ryd/dashboard.com")
+            }
+            </script>
+        </form>
+      </div>
+      <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <script src="js/login.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
